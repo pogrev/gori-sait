@@ -119,6 +119,7 @@ body {
     border-radius: 20px;
     padding: 25px;
     min-height: 450px;
+    min-width: 450px;
 }
 .content.short-content {
     min-height: auto;
@@ -183,6 +184,7 @@ btn {
 .content {
     min-height: auto;
     padding: 15px;
+    min-width: auto;
 }
 .sidebar ul li a{
     font-size: 10px
