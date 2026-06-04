@@ -120,7 +120,6 @@ body {
     border-radius: 20px;
     padding: 25px;
     min-height: 450px;
-    min-width: 550px;
 }
 .content.short-content {
     min-height: auto;
@@ -160,7 +159,7 @@ body {
     .banner-title {
         font-size: 28px;
     }
-    .banner-title h3 {
+    .banner-title h2 {
         font-size: 16px;
     }
     .sidebar ul li a {
