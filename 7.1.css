@@ -2,8 +2,8 @@ body {
     font-family: "Arial";
     background-color: #FFFFFF;   
     padding-bottom: 60px;
-}
-
+}                   
+ 
 .top-banner {
     position: relative;
     width: 100%;
@@ -13,13 +13,13 @@ body {
     border-top-right-radius: 30px;
     height: clamp(120px, 20vh, 250px);
 }
-
+ 
 .top-banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
+ 
 .banner-title {
     position: absolute;
     top: 25px;
@@ -36,11 +36,11 @@ body {
     width: auto;
 }
 .banner-title.left-align h3 {
-    font-size: 24px; 
+    font-size: 24px;  
     margin-top: 0;
 }
 .banner-title h1 {
-    font-size: 24px; 
+    font-size: 24px;  
     margin-top: 0;
 }
 .nav-bar {
@@ -52,7 +52,7 @@ body {
     border: 1px solid #000;
     border-top: none;
 }
-
+ 
 .btn {
     display: block;
     background-color: #00FF00; 
@@ -66,26 +66,26 @@ body {
     font-weight: bold;
     clip-path: polygon(12px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 12px);
 }
-
+ 
 .btn.active {
     background-color: #ffffff;
 }
-
+ 
 .main-wrapper {
     display: grid;
     grid-template-columns: 200px minmax(450px, 1fr);
-    column-gap: 20px;
     gap: 15px;
     margin-top: 15px;
-    align-items: start;
+    align-items: start; 
+    min-width: 690px;
 }
-
+ 
 .left-column {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: grid; 
+    grid-template-columns: 1fr;    
     gap: 10px;            
 }
-
+ 
 .sidebar {
     background-color: white;
     border: 1px solid #000;
@@ -93,7 +93,7 @@ body {
     padding: 15px 10px; 
     box-sizing: border-box;
 }
-
+ 
 .menu-title-box {
     border: 2px solid  #00FF00;
     background-color:  #00FF00;
@@ -102,9 +102,9 @@ body {
     text-align: left;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #000000
+    color: #000000;
 }
-
+ 
 .sidebar button {
     background-color: #00FF00; 
     border: 1px solid #00FF00;
@@ -113,7 +113,7 @@ body {
     padding: 2px 8px;
     margin-top: 10px;
 }
-
+ 
 .content {
     background-color: #ffffff;
     border: 1px solid #000000;
@@ -125,11 +125,11 @@ body {
 .content.short-content {
     min-height: auto;
 }
-.sidebar ul {
+.sidebar ul {   
     padding-left: 20px;
     margin: 0;
 }
-
+ 
 .sidebar, ul li {
     color: red;
     text-decoration: none;
@@ -144,38 +144,40 @@ body {
     background-color: #FFFFFF; 
     color: #000000;            
     font-size: 14px;
-    text-align: left;     
+    text-align: left;
 }
-
 @media (min-width: 769px) and (max-width: 1024px) {
     .main-wrapper {
-        grid-template-columns: 160px 1fr;
+        -template-columns: 160px 1fr;
         gap: 10px;
+        min-width: auto;
     }
-    .btn {
+    btn {
         font-size: 14px;
         padding: 8px 16px;
     }
+     
     .banner-title {
         font-size: 28px;
     }
     .banner-title h3 {
         font-size: 16px;
     }
-    .sidebar ul li a{
-        font-size: 10px
+    .sidebar ul li a {
+        font-size: 10px;
     }
     .content {
-         padding: 15px;
+        padding: 15px;
+        min-width: auto;
     }
 }
-
 @media (max-width: 768px) {
     .main-wrapper {
         grid-template-columns: 1fr;
-        column-gap: 0;
         gap: 15px;
+        min-width: auto;
     }
+        
     .btn {
         font-size: 10px;
         padding: 6px 12px;   
@@ -185,8 +187,8 @@ body {
         padding: 15px;
         min-width: auto;
     }
-    .sidebar ul li a{
-        font-size: 10px
+    .sidebar ul li a {
+        font-size: 10px;
     }
     .nav-bar {
         padding-top: 6px;    
