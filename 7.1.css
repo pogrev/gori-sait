@@ -120,7 +120,6 @@ body {
     border-radius: 20px;
     padding: 25px;
     min-height: 450px;
-    min-width: 450px;
 }
 .content.short-content {
     min-height: auto;
