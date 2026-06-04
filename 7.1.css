@@ -73,7 +73,8 @@ body {
 
 .main-wrapper {
     display: grid;
-    grid-template-columns:200px 1fr;
+    grid-template-columns: 200px minmax(450px, 1fr);
+    column-gap: 20px;
     gap: 15px;
     margin-top: 15px;
     align-items: start;
@@ -145,52 +146,50 @@ body {
     font-size: 14px;
     text-align: left;     
 }
-@media (min-width: 769px) and (max-width: 1024px) {
-.main-wrapper {
--template-columns: 160px 1fr;
-gap: 10px;
-}
-btn {
-    font-size: 14px;
-    padding: 8px 16px;
-}
 
-.banner-title {
-    font-size: 28px;
-}
-.banner-title h3 {
-    font-size: 16px;
-}
-.sidebar ul li a{
-    font-size: 10px
-}
-.content {
-     padding: 15px;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main-wrapper {
+        grid-template-columns: 160px 1fr;
+        gap: 10px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .banner-title {
+        font-size: 28px;
+    }
+    .banner-title h3 {
+        font-size: 16px;
+    }
+    .sidebar ul li a{
+        font-size: 10px
+    }
+    .content {
+         padding: 15px;
     }
 }
 
-
 @media (max-width: 768px) {
-    
-.main-wrapper {
-    grid-template-columns: 1fr;
-    gap: 15px;
-}
-    
-.btn {
-    font-size: 10px;
-    padding: 6px 12px;   
-}
-.content {
-    min-height: auto;
-    padding: 15px;
-    min-width: auto;
-}
-.sidebar ul li a{
-    font-size: 10px
-}
-.nav-bar {
-    padding-top: 6px;    
-    padding-left: 15px;  
-}
+    .main-wrapper {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        gap: 15px;
+    }
+    .btn {
+        font-size: 10px;
+        padding: 6px 12px;   
+    }
+    .content {
+        min-height: auto;
+        padding: 15px;
+        min-width: auto;
+    }
+    .sidebar ul li a{
+        font-size: 10px
+    }
+    .nav-bar {
+        padding-top: 6px;    
+        padding-left: 15px;  
+    }
 }
